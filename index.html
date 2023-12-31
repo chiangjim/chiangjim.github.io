@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chiang Jim's Linktree</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@100&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div id="container">
+            <img id="avatar" alt="Chiang Jim's Avatar" src="{{ url_for('static', filename='img/avatar.jpg') }}" alt="Avatar">
+            <h1 style="margin-bottom:-20px">Chiang Jim</h1>
+            <h6>Student|113年會考生|Code</h6>
+        </div>
+        <div id="about-me">
+            <h3 style="margin-bottom:-17px">嗨 我是 Chiang Jim</h3>
+            <p>然後... 我懶得寫...</p>
+        </div>
+
+        <div class="card" id="discord-box">
+            <img src="{{ url_for('static', filename='img/icon/discord.svg') }}" alt="Discord icon" class="icon">
+            <div class="text-box">
+                <h3>Discord</h3>
+                <p>chiangjim</p>
+            </div>
+        </div>
+
+        <a href="https://t.me/chiangjim" target="_blank">
+        <div class="card" id="telegram-box">
+            <img src="{{ url_for('static', filename='img/icon/telegram.svg') }}" alt="telegram icon" class="icon">
+            <div class="text-box">
+                <h3>Telegram</h3>
+                <p>@chiangjim</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://www.instagram.com/chiang.jim_831?igsh=Ym45dGF2M2g0aTIx" target="_blank">
+        <div class="card" id="instagram-box">
+            <img src="{{ url_for('static', filename='img/icon/instagram.svg') }}" alt="instagram icon" class="icon">
+            <div class="text-box">
+                <h3>Instagram</h3>
+                <p>@chiang.jim_831</p>
+            </div>
+        </div>
+        </a>
+
+        <a href="https://github.com/chiangjim" target="_blank">
+        <div class="card" id="github-box">
+            <img src="{{ url_for('static', filename='img/icon/instagram.svg') }}" alt="instagram icon" class="icon">
+            <div class="text-box">
+                <h3>Github</h3>
+                <p>chiangjim</p>
+            </div>
+        </div>    
+        </a>
+
+        <foother id="foother-center">&copy 2023 Chiang Jim</foother>
+    </body>
+</html>
