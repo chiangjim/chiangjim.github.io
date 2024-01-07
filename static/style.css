@@ -56,9 +56,11 @@ a:hover {
 }
 
 #location img {
-    margin-right: 8px;
+    margin-right: 5px;
+    margin-bottom: 8px;
     width: 15px;
     height: 15px;
+
 }
 
 #telegram-box {
