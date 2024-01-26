@@ -1,2 +1,2 @@
 # chiang-jim-linktree-web
-Just a Linktree Web
+Just a personal website of Chiang Jim.
