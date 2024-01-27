@@ -19,14 +19,13 @@ var navElement = document.createElement("nav");
 navElement.innerHTML = `
     <nav>
     <div class="navbar">
-      <div class="logo"><a href="#">test web</a></div>
+      <div class="logo"><a href="/">Chiang Jim</a></div>
       <ul class="links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About-me">About</a></li>
-        <li><a href="#Blog">blog</a></li>
-        <li><a href="#Linktree">Linktree</a></li>
+        <li><a href="/">Home</a></li>
+        <li><a href="about_me">About</a></li>
+        <li><a href="blog">blog</a></li>
+        <li><a href="linktree">Linktree</a></li>
       </ul>
-      <a href="#Linktree" class="action_btn">Get start</a>
       <div class="toggler_btn">
         <i class="fa-solid fa-bars-staggered"></i>
       </div>
@@ -38,7 +37,6 @@ navElement.innerHTML = `
         <li><a href="about_me">About</a></li>
         <li><a href="blog">blog</a></li>
         <li><a href="linktree">Linktree</a></li>
-        <li><a href="#Linktree" class="action_btn">Get start</a></li>
       </ul>
     </div>
   </nav>

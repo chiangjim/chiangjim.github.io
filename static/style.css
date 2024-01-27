@@ -1,12 +1,10 @@
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-}
-
-html {
   height: 100%;
   width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* nav */
 nav {
   position: relative;
   padding: 0 2rem;
@@ -17,9 +15,13 @@ nav {
   height:60px;
   max-width:1200px;
   margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border: 1px solid #b5b5b5;
+  border-radius: 3rem;
+  background: #b5b5b5
 }
 
 .navbar .logo a {
@@ -53,38 +55,15 @@ nav a:hover {
   color: cyan
 }
 
-.action_btn{
-  background-color: cyan;
-  color: #fff;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-  border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: scale 0.2 ease;
-}
-
-.action_btn:hover{
-  background-color: #fff;
-  color: cyan;
-  scale: 1.05;
-}
-
-.action_btn:active{
-  scale: 0.95;
-}
-
 .dropdown {
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 60px;
-  width: 300px;
+  width: 210px;
   background-color: #ebebeb;
   backdrop-filter: blur(15px);
   border-radius: 10px;
-  overflow: hidden;
+  overflow: auto;
   display: none;
   height: 0px;
   transition: height 0.2s cubic-bezier(0.75, 0.885, 0.32, 1.275);
@@ -95,21 +74,20 @@ nav a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100px;
 }
 
-.dropdown .action_btn {
-  width: 100%;
+.dropdown {
   display: flex;
   justify-content: center;
 }
 
 .dropdown.open{
-  height: 240px;
+  height: 200px;
 }
 
 @media (max-width: 992px) {
-  .navbar .links,
-  .navbar .action_btn {
+  .navbar .links{
     display:none;
   }
   .navbar .toggle_btn {
@@ -120,114 +98,11 @@ nav a:hover {
   }
 }
 
+/*footer*/
 footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top:auto;
     font-size:12px;
-}
-
-a:hover, a:visited, a:link, a:active, a:focus {
-  text-decoration: none;
-  color:black;
-  outline:none;
-}
-
-a:hover {
-  opacity: 0.6;
-}
-
-#avatarandname{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: -10px;
-    margin-top: 20px;
-}
-
-#avatarandname img {
-    width: 80px;
-    height: 80px;
-    border-radius: 100%;
-    margin-bottom: 0px;
-}
-
-#location img{
-    width: 12px;
-    height: 12px;
-  }
-
-#location, #pronoun, #identity, #remark {
-  font-size: 13px;
-  text-align: center;
-  margin-bottom: -9px;
-  font-weight: bold;
-}
-
-#remark {
-  margin-bottom: 0px;
-}
-
-#telegram-box {
-  border: 2px solid #26a8ff;
-}
-
-#telegram-box:active {
-  background-color: #26a8ff;
-  color: white;
-}
-
-#instagram-box{
-  border: 2px solid #FF5151;
-}
-
-#instagram-box img{
-    padding-right: -10px;
-}
-
-#instagram-box:active {
-  background-color: #FF5151;
-  color: white;
-}
-
-#github-box {
-  border: 2px solid #333333;
-}
-
-#github-box:active {
-  background-color: #333333;
-  color: white;
-}
-
-#discord-box {
-  border: 2px solid #7289DA;
-}
-
-#discord-box:active {
-  background-color: #7289DA;
-  color: white;
-}
-
-.card {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-
-.card img {
-    width: 50px;
-    height: 50px;
-    flex:2;
-}
-
-.card div {
-    flex:3;
 }
